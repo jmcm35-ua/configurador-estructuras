@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Estructuras 3D</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="/logos/logo.svg">
+  </head>
+  <body>
+
+    <div class="logo">
+      <img class="svg-img" src="/logos/full-logo-blanco.svg" alt="Imagen SVG">
+    </div>
+    <div class="configurador">
+      <h2>Configuración</h2>
+      <p style="margin: .2em 0;">Estilos</p>
+      <div id="menu" class="estilos">
+        <img src="/textures/madera/Preview.png" alt="Bronce" class="option" data-style="madera">
+        <img src="/textures/metal/Preview.png" alt="Bronce" class="option" data-style="metal">
+        <img src="/textures/bronce/Preview.png" alt="Bronce" class="option" data-style="bronce">
+      </div>
+      <p style="margin: 0;">Ancho</p>
+      <div class="control">
+          <input class="slide" type="range" min="250" max="1250" step="1" value="391" data-key="x">
+          <input class="value" type="number" min="250" max="1250" step="1" value="391" data-key="x">
+      </div>
+      
+      <p class="control-title">Largo</p>
+      <div class="control">
+          <input class="slide" type="range" min="250" max="1250" step="1" value="400" data-key="y">
+          <input class="value" type="number" min="250" max="1250" step="1" value="400" data-key="y">
+      </div>
+      
+      <p class="control-title">Altura</p>
+      <div class="control">
+          <input class="slide" type="range" min="200" max="300" step="1" value="294" data-key="z">
+          <input class="value" type="number" min="200" max="300" step="1" value="294" data-key="z">
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+    
